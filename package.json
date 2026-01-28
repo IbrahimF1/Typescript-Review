@@ -1,0 +1,27 @@
+{
+  "name": "javascript-review",
+  "version": "1.0.0",
+  "description": "Following this video on Javascript basics, but doing it in Typescript:\r https://youtu.be/E3XxeE7NF30",
+  "main": "project.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IbrahimF1/Javascript-Review.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/IbrahimF1/Javascript-Review/issues"
+  },
+  "homepage": "https://github.com/IbrahimF1/Javascript-Review#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
