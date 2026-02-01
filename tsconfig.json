@@ -7,9 +7,10 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "ESNext",
-    "target": "esnext",
+    "module": "commonjs",
+    "target": "es2020",
     "types": ["node"],
+    "moduleResolution": "node",
     "esModuleInterop": true, // Allows for ES6-style imports
     // For nodejs:
     // "lib": ["esnext"],

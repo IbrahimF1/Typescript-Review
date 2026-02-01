@@ -1,4 +1,5 @@
-import promptSync from "prompt-sync";
+// Imports
+const promptSync = require("prompt-sync")
 
 /*
 1. Deposit some money
@@ -10,9 +11,22 @@ import promptSync from "prompt-sync";
 7. Play again
 */
 
-const prompt = promptSync()
+// Swapped prompt to userPrompt:
+// Typescript includes a reserved global prompt() function for window.prompt()
+const userPrompt = promptSync()  
 
 // Retrieve deposit amount from frontpage
-function deposit() {
-    
+const deposit = (): number => {
+    while (true) {
+            const depositAmount: string = userPrompt("Enter a deposit amount: ")
+        const numberDepositAmount: number = Number.parseFloat(depositAmount)
+
+        if (Number.isNaN(numberDepositAmount) || numberDepositAmount <= 0) {
+            console.log("❌ Invalid deposit amount, try again.")
+        } else {
+            return numberDepositAmount
+        }
+    }
 }
+
+deposit()
