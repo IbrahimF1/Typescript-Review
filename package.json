@@ -4,7 +4,8 @@
   "description": "Following this video on Javascript basics, but doing it in Typescript:\r https://youtu.be/E3XxeE7NF30",
   "main": "project.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node project.ts"
   },
   "repository": {
     "type": "git",
@@ -19,11 +20,14 @@
   },
   "homepage": "https://github.com/IbrahimF1/Javascript-Review#readme",
   "devDependencies": {
+    "@types/node": "^25.1.0",
+    "@types/prompt-sync": "^4.2.3",
     "@types/react": "^19.2.10",
     "@types/react-dom": "^19.2.3",
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "prompt-sync": "^4.2.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "ts-node": "^10.9.2"

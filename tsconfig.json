@@ -9,7 +9,8 @@
     // See also https://aka.ms/tsconfig/module
     "module": "ESNext",
     "target": "esnext",
-    "types": [],
+    "types": ["node"],
+    "esModuleInterop": true, // Allows for ES6-style imports
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],

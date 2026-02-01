@@ -1,3 +1,5 @@
+import promptSync from "prompt-sync";
+
 /*
 1. Deposit some money
 2. Determine number of lines to bet on
@@ -8,6 +10,7 @@
 7. Play again
 */
 
+const prompt = promptSync()
 
 // Retrieve deposit amount from frontpage
 function deposit() {
